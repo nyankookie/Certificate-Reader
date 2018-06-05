@@ -1,3 +1,4 @@
+package small_term1;
 
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -43,20 +44,20 @@ import org.bouncycastle.jce.X509Principal;
  */
 
 /**
- *è¯ä¹¦è§£æå·¥å…·
- * @author  åˆ˜è‰ºè¯­ åˆ˜æ¸Šæ™¨ æ¢é›¨å©· 
+ *Ö¤Êé½âÎö¹¤¾ß
+ * @author  ÁõÒÕÓï ÁõÔ¨³¿ ÁºÓêæÃ 
  */
 public class MiniCAFrame extends javax.swing.JFrame {
     
     /**
      * Creates new form MiniCAFrame
      */
-    private Object [][] data1;//å­˜å‚¨æ‰€æœ‰å±æ€§
-    private Object [] data2;//å‚¨å­˜é¢å‘è€…ã€ä½¿ç”¨è€…ã€å…¬é’¥çš„è¯¦ç»†ä¿¡æ¯
+    private Object [][] data1;//´æ´¢ËùÓĞÊôĞÔ
+    private Object [] data2;//´¢´æ°ä·¢Õß¡¢Ê¹ÓÃÕß¡¢¹«Ô¿µÄÏêÏ¸ĞÅÏ¢
     
-    final static int numOfAttri = 20;//<æ‰€æœ‰>å±æ€§ä¸ªæ•°
-    final static int numOfAttri1 = 10;//ç‰ˆæœ¬1å­—æ®µå±æ€§ä¸ªæ•°
-    final static int numOfAttri_key = 17; //åŸºæœ¬çº¦æŸæ‰€åœ¨æ•°ç»„ä½ç½®
+    final static int numOfAttri = 20;//<ËùÓĞ>ÊôĞÔ¸öÊı
+    final static int numOfAttri1 = 10;//°æ±¾1×Ö¶ÎÊôĞÔ¸öÊı
+    final static int numOfAttri_key = 17; //»ù±¾Ô¼ÊøËùÔÚÊı×éÎ»ÖÃ
 
     public MiniCAFrame() {
         this.data2 = new Object[3];
@@ -73,7 +74,7 @@ public class MiniCAFrame extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     
     
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -89,18 +90,18 @@ public class MiniCAFrame extends javax.swing.JFrame {
         jButton_exit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("è¯ä¹¦æŸ¥çœ‹");
+        setTitle("Ö¤Êé²é¿´");
         setBounds(new java.awt.Rectangle(700, 160, 587, 818));
         setMaximumSize(new java.awt.Dimension(587, 818));
         setMinimumSize(new java.awt.Dimension(587, 818));
         setResizable(false);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "è¯¦ç»†ä¿¡æ¯", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("å®‹ä½“", 0, 18))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ÏêÏ¸ĞÅÏ¢", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("ËÎÌå", 0, 18))); // NOI18N
 
-        show.setFont(new java.awt.Font("å®‹ä½“", 0, 16)); // NOI18N
-        show.setText("æ˜¾ç¤º(s):");
+        show.setFont(new java.awt.Font("ËÎÌå", 0, 16)); // NOI18N
+        show.setText("ÏÔÊ¾(s):");
 
-        jComboBox_type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<æ‰€æœ‰>", "åªæœ‰ç‰ˆæœ¬1å­—æ®µ", "åªæœ‰æ‰©å±•", "åªæœ‰å…³é”®æ‰©å±•", "åªæœ‰å±æ€§" }));
+        jComboBox_type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<ËùÓĞ>", "Ö»ÓĞ°æ±¾1×Ö¶Î", "Ö»ÓĞÀ©Õ¹", "Ö»ÓĞ¹Ø¼üÀ©Õ¹", "Ö»ÓĞÊôĞÔ" }));
         jComboBox_type.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox_typeActionPerformed(evt);
@@ -112,7 +113,7 @@ public class MiniCAFrame extends javax.swing.JFrame {
 
             },
             new String [] {
-                "å­—æ®µ", "å€¼", ""
+                "×Ö¶Î", "Öµ", ""
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -172,7 +173,7 @@ public class MiniCAFrame extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
-        jButton_chooseCA.setText("é€‰æ‹©è¯ä¹¦");
+        jButton_chooseCA.setText("Ñ¡ÔñÖ¤Êé");
         jButton_chooseCA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_chooseCAActionPerformed(evt);
@@ -202,7 +203,7 @@ public class MiniCAFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton_exit.setText("ç¡®å®š");
+        jButton_exit.setText("È·¶¨");
         jButton_exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_exitActionPerformed(evt);
@@ -239,36 +240,37 @@ public class MiniCAFrame extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
     
-    private void jButton_chooseCAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_chooseCAActionPerformed
-    //å¼¹å‡ºæµè§ˆæ–‡ä»¶çª—å£ é€‰æ‹©éœ€è¦æŸ¥çœ‹çš„è¯ä¹¦ é€‰ä¸­æ–‡ä»¶ååœ¨æ–‡æœ¬å­—æ®µæ˜¾ç¤ºç»å¯¹è·¯å¾„
+    private void jButton_chooseCAActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    //µ¯³öä¯ÀÀÎÄ¼ş´°¿Ú Ñ¡ÔñĞèÒª²é¿´µÄÖ¤Êé Ñ¡ÖĞÎÄ¼şºóÔÚÎÄ±¾×Ö¶ÎÏÔÊ¾¾ø¶ÔÂ·¾¶
         JFileChooser fd = new JFileChooser();
         fd.showOpenDialog(null);
-        File f = null;//ç”¨æˆ·é€‰æ‹©çš„æ–‡ä»¶
+        File f = null;//ÓÃ»§Ñ¡ÔñµÄÎÄ¼ş
         f = fd.getSelectedFile();
-        if(f != null && ( f.getPath().substring(f.getPath().lastIndexOf(".")).equals(".cer")||f.getPath().substring(f.getPath().lastIndexOf(".")).equals(".Cer") )){//å¦‚æœæ–‡ä»¶æ˜¯è¯ä¹¦æ ¼å¼
-             //å…ˆæ¸…ç©ºè¡¨æ ¼
+        if(f != null && ( f.getPath().substring(f.getPath().lastIndexOf(".")).equals(".cer")||f.getPath().substring(f.getPath().lastIndexOf(".")).equals(".Cer") )){//Èç¹ûÎÄ¼şÊÇÖ¤Êé¸ñÊ½
+             //ÏÈÇå¿Õ±í¸ñ
             clearTable();
-            //å†æ¸…ç©ºæ•°ç»„
+            //ÔÙÇå¿ÕÊı×é
             for(int i=0; i<numOfAttri; i++){
                  data1[i][1] = null;
                  data1[i][0] = null;
             }
-             
-            jTextField_CApath.setText(f.getPath());//å°†æ–‡ä»¶è·¯å¾„å†™å…¥æ–‡æœ¬æ¡†
-            getAllOfAttributes(f);//å°†è¯ä¹¦çš„æ‰€æœ‰ä¿¡æ¯å­˜å…¥dataæ•°ç»„ä¸­ 
-            //jComboBox_type.set
-            showAll();//å¹¶åœ¨è¡¨æ ¼ä¸­æ˜¾ç¤ºè¯¥è¯ä¹¦æ‰€æœ‰å±æ€§
-            jTable_info.getColumnModel().getColumn(0).setCellRenderer(new JTableCellRender1());//é€šè¿‡å¸¦æœ‰å›¾ç‰‡å’Œæ–‡å­—çš„æ ‡ç­¾è¡¨ç¤ºè¡¨æ ¼ç¬¬ä¸€åˆ—çš„å•å…ƒæ ¼
-            jTable_info.setBackground(new java.awt.Color(255, 255, 255));//è®¾ç½®è¡¨æ ¼èƒŒæ™¯è‰²ä¸ºç™½è‰²
+            //Çå¿ÕÎÄ±¾ÇøÓò
+            jText_detailedInfo.setText(""); 
+            
+            jTextField_CApath.setText(f.getPath());//½«ÎÄ¼şÂ·¾¶Ğ´ÈëÎÄ±¾¿ò
+            getAllOfAttributes(f);//½«Ö¤ÊéµÄËùÓĞĞÅÏ¢´æÈëdataÊı×éÖĞ 
+            judgeWhich();//ÏÔÊ¾¶ÔÓ¦ÊôĞÔ
+            jTable_info.getColumnModel().getColumn(0).setCellRenderer(new JTableCellRender1());//Í¨¹ı´øÓĞÍ¼Æ¬ºÍÎÄ×ÖµÄ±êÇ©±íÊ¾±í¸ñµÚÒ»ÁĞµÄµ¥Ôª¸ñ
+            jTable_info.setBackground(new java.awt.Color(255, 255, 255));//ÉèÖÃ±í¸ñ±³¾°É«Îª°×É«
         }
-        else if(f == null);//å¦‚æœæ²¡æœ‰é€‰ä¸­æ–‡ä»¶
-        else//å¦‚æœä¸æ˜¯è¯ä¹¦ç±»å‹çš„æ–‡ä»¶å¼¹å‡ºæç¤ºæ¡† 
-            JOptionPane.showMessageDialog(null,  "è¯·é€‰æ‹©è¯ä¹¦ç±»å‹æ–‡ä»¶ï¼", "é”™è¯¯æç¤º",JOptionPane.ERROR_MESSAGE); 
-    }//GEN-LAST:event_jButton_chooseCAActionPerformed
+        else if(f == null);//Èç¹ûÃ»ÓĞÑ¡ÖĞÎÄ¼ş
+        else//Èç¹û²»ÊÇÖ¤ÊéÀàĞÍµÄÎÄ¼şµ¯³öÌáÊ¾¿ò 
+            JOptionPane.showMessageDialog(null,  "ÇëÑ¡ÔñÖ¤ÊéÀàĞÍÎÄ¼ş£¡", "´íÎóÌáÊ¾",JOptionPane.ERROR_MESSAGE); 
+    }                                                
 
-    private void showAll(){//æ˜¾ç¤º<æ‰€æœ‰>å±æ€§
+    private void showAll(){//ÏÔÊ¾<ËùÓĞ>ÊôĞÔ
         
         DefaultTableModel table = (DefaultTableModel) jTable_info.getModel();
         if(!(data1 == null))
@@ -277,7 +279,7 @@ public class MiniCAFrame extends javax.swing.JFrame {
                     table.addRow(data1[i]);
  
     }
-    private void show1(){//æ˜¾ç¤ºåªæœ‰ç‰ˆæœ¬1å­—æ®µ
+    private void show1(){//ÏÔÊ¾Ö»ÓĞ°æ±¾1×Ö¶Î
         
         DefaultTableModel table = (DefaultTableModel) jTable_info.getModel();
         if(!(data1 == null))
@@ -286,7 +288,7 @@ public class MiniCAFrame extends javax.swing.JFrame {
                     table.addRow(data1[i]);
     }
     
-    private void show_extend(){//æ˜¾ç¤ºåªæœ‰æ‰©å±•
+    private void show_extend(){//ÏÔÊ¾Ö»ÓĞÀ©Õ¹
         
         DefaultTableModel table = (DefaultTableModel) jTable_info.getModel();
         if(!(data1 == null))
@@ -295,14 +297,14 @@ public class MiniCAFrame extends javax.swing.JFrame {
                     table.addRow(data1[i]);
     }
     
-    private void show_key(){//æ˜¾ç¤ºåªæœ‰å…³é”®æ‰©å±•
+    private void show_key(){//ÏÔÊ¾Ö»ÓĞ¹Ø¼üÀ©Õ¹
         
         DefaultTableModel table = (DefaultTableModel) jTable_info.getModel();
         if(!(data1 == null))
             if((data1[numOfAttri_key][1] != null) && !data1[numOfAttri_key][1].equals(""))
                 table.addRow(data1[numOfAttri_key]);
     }
-    private void show_attribute(){//æ˜¾ç¤ºåªæœ‰å±æ€§
+    private void show_attribute(){//ÏÔÊ¾Ö»ÓĞÊôĞÔ
         
         DefaultTableModel table = (DefaultTableModel) jTable_info.getModel();
         if(!(data1 == null))
@@ -311,7 +313,7 @@ public class MiniCAFrame extends javax.swing.JFrame {
                     table.addRow(data1[i]);
     }
 
-    private void getAllOfAttributes(File f){//å°†è¯ä¹¦çš„æ‰€æœ‰ä¿¡æ¯å­˜å…¥dataæ•°ç»„ä¸­
+    private void getAllOfAttributes(File f){//½«Ö¤ÊéµÄËùÓĞĞÅÏ¢´æÈëdataÊı×éÖĞ
         try{
                 X509Certificate x509Certificate = null; 
                 CertificateFactory certificateFactory = CertificateFactory.getInstance("X.509");
@@ -319,139 +321,132 @@ public class MiniCAFrame extends javax.swing.JFrame {
                 x509Certificate = (X509Certificate) certificateFactory.generateCertificate(fileInputStream);  
                 fileInputStream.close();  
                
-                String filePath1 = "D:\\projects\\cipher\\small_term\\small_term\\src\\imgs_icons\\icon2.png";
-                String filePath2 = "D:\\projects\\cipher\\small_term\\small_term\\src\\imgs_icons\\icon1.png";
-                String filePath3 = "D:\\projects\\cipher\\small_term\\small_term\\src\\imgs_icons\\icon4.png";
-                String filePath4 = "D:\\projects\\cipher\\small_term\\small_term\\src\\imgs_icons\\icon3.png";
-                Icon icon1 = new ImageIcon(filePath1); //åªæœ‰ç‰ˆæœ¬å­—æ®µ1çš„å›¾æ ‡
-                Icon icon2 = new ImageIcon(filePath2); //æ‰©å±•çš„å›¾æ ‡
-                Icon icon3 = new ImageIcon(filePath3); //å…³é”®çš„å›¾æ ‡
-                Icon icon4 = new ImageIcon(filePath4); //å±æ€§çš„å›¾æ ‡
-                JLabel[] label=new JLabel [numOfAttri];//ç”¨äºå­˜å‚¨è¡¨æ ¼ç¬¬ä¸€åˆ—çš„å›¾æ ‡å’Œå­—æ®µæ–‡æœ¬
+                String filePath1 = "D:\\2017prj\\small_term1\\src\\img_icons\\icon2.png";
+                String filePath2 = "D:\\2017prj\\small_term1\\src\\img_icons\\icon1.png";
+                String filePath3 = "D:\\2017prj\\small_term1\\src\\img_icons\\icon4.png";
+                String filePath4 = "D:\\2017prj\\small_term1\\src\\img_icons\\icon3.png";
+                Icon icon1 = new ImageIcon(filePath1); //Ö»ÓĞ°æ±¾×Ö¶Î1µÄÍ¼±ê
+                Icon icon2 = new ImageIcon(filePath2); //À©Õ¹µÄÍ¼±ê
+                Icon icon3 = new ImageIcon(filePath3); //¹Ø¼üµÄÍ¼±ê
+                Icon icon4 = new ImageIcon(filePath4); //ÊôĞÔµÄÍ¼±ê
+                JLabel[] label=new JLabel [numOfAttri];//ÓÃÓÚ´æ´¢±í¸ñµÚÒ»ÁĞµÄÍ¼±êºÍ×Ö¶ÎÎÄ±¾
                 
                 for(int i=0; i<numOfAttri1; i++)
                     label[i] = new JLabel("",icon1, JLabel.LEFT);
                 for(int i=numOfAttri1; i<numOfAttri_key; i++)
                     label[i] = new JLabel("",icon2, JLabel.LEFT);
                 
-                label[numOfAttri_key] = new JLabel("åŸºæœ¬çº¦æŸ",icon3, JLabel.LEFT);
-                
-                
+                label[numOfAttri_key] = new JLabel("»ù±¾Ô¼Êø",icon3, JLabel.LEFT);//»ù±¾Ô¼ÊøµÄÍ¼±êºÍ×Ö¶Î
+               
                  for(int i=numOfAttri_key+1; i<numOfAttri; i++)
                     label[i] = new JLabel("",icon4, JLabel.LEFT);
                  
-                label[0].setText("ç‰ˆæœ¬");
+                label[0].setText("°æ±¾");
                 data1[0][0] = label[0];
                 data1[0][1] = "V"+x509Certificate.getVersion();
    
-                label[1].setText("åºåˆ—å·");
+                label[1].setText("ĞòÁĞºÅ");
                 data1[1][0] =label[1];
                 data1[1][1] = "0"+x509Certificate.getSerialNumber();
                 
-                label[2].setText("ç­¾åç®—æ³•");
+                label[2].setText("Ç©ÃûËã·¨");
                 data1[2][0] = label[2];
                 data1[2][1] = x509Certificate.getSigAlgName();
                 
-                label[3].setText("ç­¾åå“ˆå¸Œç®—æ³•");
+                label[3].setText("Ç©Ãû¹şÏ£Ëã·¨");
                 data1[3][0] = label[3];
                 data1[3][1] = data1[2][1].toString().substring(0,data1[2][1].toString().indexOf("with"));
                 
-                
-                //é¢å‘è€…çš„è¯¦ç»†ä¿¡æ¯æ¯”ç¬¬äºŒåˆ—æ›´è¯¦ç»†
-                label[4].setText("é¢å‘è€…");
+                //°ä·¢ÕßµÄÏêÏ¸ĞÅÏ¢±ÈµÚ¶şÁĞ¸üÏêÏ¸
+                label[4].setText("°ä·¢Õß");
                 data1[4][0] = label[4];
                 data1[4][1] = getIssuerNames(x509Certificate);
                 data2[0] = x509Certificate.getIssuerX500Principal().toString().replace(",", "\n");
                
-                label[5].setText("æœ‰æ•ˆæœŸä»");
+                label[5].setText("ÓĞĞ§ÆÚ´Ó");
                 data1[5][0] = label[5];
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
+                SimpleDateFormat formatter = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
                 data1[5][1] = formatter.format(x509Certificate.getNotBefore());
                 
-  
-                label[6].setText("åˆ°");
+                label[6].setText("µ½");
                 data1[6][0] = label[6];
                 data1[6][1] = formatter.format(x509Certificate.getNotAfter());
-                        ;
-                
-                
-                //åŒé¢å‘è€…
-                label[7].setText("ä½¿ç”¨è€…");
+                                      
+                //Í¬°ä·¢Õß
+                label[7].setText("Ê¹ÓÃÕß");
                 data1[7][0] =  label[7];
                 data1[7][1] = getPrincipalNames(x509Certificate);  
                 data2[1]= x509Certificate.getSubjectX500Principal().toString().replace(",", "\n");
                 
-                //åŒä¸Š
-                /****************************åˆ˜æ¸Šæ™¨***************************/
-                label[8].setText("å…¬é’¥");
+                //Í¬ÉÏ
+                /****************************ÁõÔ¨³¿***************************/
+                label[8].setText("¹«Ô¿");
                 data1[8][0] = label[8];
                 String s1 = x509Certificate.getPublicKey().toString();                
                 data1[8][1] = s1.substring(4,7)+"("+s1.substring(s1.lastIndexOf(",")+2,s1.indexOf("\n"))+")";
                 data2[2] = byte2hex(x509Certificate.getPublicKey().getEncoded());
        
-                label[9].setText("å…¬é’¥å‚æ•°");
+                label[9].setText("¹«Ô¿²ÎÊı");
                 data1[9][0]= label[9];
                 data1[9][1]= "05 00";
      
-                    label[10].setText( "ä½¿ç”¨è€…å¯†é’¥æ ‡è¯†ç¬¦");
-                    data1[10][0] = label[10];
-                    data1[10][1] = getSubjectKeyIdentifier(x509Certificate);                   
+                label[10].setText( "Ê¹ÓÃÕßÃÜÔ¿±êÊ¶·û");
+                data1[10][0] = label[10];
+                data1[10][1] = getSubjectKeyIdentifier(x509Certificate);                   
                     
-                    label[11].setText( "æˆæƒå¯†é’¥æ ‡è¯†ç¬¦");
-                    data1[11][0] =  label[11];
-                    data1[11][1] = getAuthorityKeyIdentifier(x509Certificate);
+                label[11].setText( "ÊÚÈ¨ÃÜÔ¿±êÊ¶·û");
+                data1[11][0] =  label[11];
+                data1[11][1] = getAuthorityKeyIdentifier(x509Certificate);
                     
-                    label[12].setText("ä½¿ç”¨è€…å¯é€‰åç§°");
-                    data1[12][0] =  label[12];
-                    data1[12][1] = getSubjectAlterNames(x509Certificate);
+                label[12].setText("Ê¹ÓÃÕß¿ÉÑ¡Ãû³Æ");
+                data1[12][0] =  label[12];
+                data1[12][1] = getSubjectAlterNames(x509Certificate);
                     
-                    label[13].setText( "é¢å‘è€…å¤‡ç”¨åç§°");
-                    data1[13][0] =  label[13];
-                    data1[13][1] = getIssuerAlternativeNames(x509Certificate);
+                label[13].setText( "°ä·¢Õß±¸ÓÃÃû³Æ");
+                data1[13][0] =  label[13];
+                data1[13][1] = getIssuerAlternativeNames(x509Certificate);
                     
-                    label[14].setText( "æˆæƒä¿¡æ¯è®¿é—®");
-                    data1[14][0] =  label[14];
-                    data1[14][1] = getAuthorityInformationAccess(x509Certificate);
+                label[14].setText( "ÊÚÈ¨ĞÅÏ¢·ÃÎÊ");
+                data1[14][0] =  label[14];
+                data1[14][1] = getAuthorityInformationAccess(x509Certificate);
                    
-                    label[15].setText( "CRLåˆ†å‘ç‚¹");
-                    data1[15][0] =  label[15];
-                    data1[15][1] = getCrlDistributionPoints(x509Certificate);
+                label[15].setText( "CRL·Ö·¢µã");
+                data1[15][0] =  label[15];
+                data1[15][1] = getCrlDistributionPoints(x509Certificate);
                    
-                    label[16].setText( "ç­–ç•¥é™åˆ¶");
-                    data1[16][0] =  label[16];
-                    data1[16][1] = getPolicyConstraints(x509Certificate);
+                label[16].setText( "²ßÂÔÏŞÖÆ");
+                data1[16][0] =  label[16];
+                data1[16][1] = getPolicyConstraints(x509Certificate);
 
-                
-               /*********************************åŸºæœ¬çº¦æŸ----åˆ˜æ¸Šæ™¨********************/
-                    if(x509Certificate.getBasicConstraints() != -1){
-                        data1[17][0] =  label[numOfAttri_key];
-                        data1[17][1] = "Subject Type=CA\nPath Length Constraint="+x509Certificate.getBasicConstraints();
-                    }
+               /*********************************»ù±¾Ô¼Êø----ÁõÔ¨³¿********************/
+                if(x509Certificate.getBasicConstraints() != -1){
+                    data1[17][0] =  label[numOfAttri_key];
+                    data1[17][1] = "Subject Type=CA\nPath Length Constraint="+x509Certificate.getBasicConstraints();
+                }
                 /*******************************************************/
-                label[18].setText("æŒ‡çº¹ç®—æ³•");
+                
+                label[18].setText("Ö¸ÎÆËã·¨");
                 data1[18][0] = label[18];
                 data1[18][1] = "sha1";
                 
-                label[19].setText("æŒ‡çº¹");
+                label[19].setText("Ö¸ÎÆ");
                 data1[19][0] = label[19];
                 data1[19][1] = getThumbPrint(x509Certificate);
-   
             }catch(Exception exception){
                 exception.printStackTrace();
             }
     }
-    private void jTable_infoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_infoMouseClicked
-        // TODO add your handling code here:
-        //é¼ æ ‡ç‚¹å‡»æ˜¾ç¤ºå®Œæ•´ä¿¡æ¯
+    private void jTable_infoMouseClicked(java.awt.event.MouseEvent evt) {                                         
+        //Êó±êµã»÷ÏÔÊ¾ÍêÕûĞÅÏ¢
         jText_detailedInfo.setText("");
         if(jTable_info.getValueAt(jTable_info.getSelectedRow(),0)!=null)
         {
-            String s =((JLabel)jTable_info.getValueAt(jTable_info.getSelectedRow(), 0)).getText(); //è·å–æ‰€é€‰ä¸­çš„è¡Œçš„ç¬¬ä¸€åˆ—çš„æ–‡æœ¬å†…å®¹
-            if (s.equals("é¢å‘è€…")) 
+            String s =((JLabel)jTable_info.getValueAt(jTable_info.getSelectedRow(), 0)).getText(); //»ñÈ¡ËùÑ¡ÖĞµÄĞĞµÄµÚÒ»ÁĞµÄÎÄ±¾ÄÚÈİ
+            if (s.equals("°ä·¢Õß")) 
                 jText_detailedInfo.setText(data2[0].toString());
-            else if(s.equals("ä½¿ç”¨è€…"))
+            else if(s.equals("Ê¹ÓÃÕß"))
                 jText_detailedInfo.setText(data2[1].toString());
-            else if(s.equals("å…¬é’¥"))  
+            else if(s.equals("¹«Ô¿"))  
                 jText_detailedInfo.setText(data2[2].toString());
             else{
                 String s1 = jTable_info.getValueAt(jTable_info.getSelectedRow(), 1).toString();
@@ -459,46 +454,42 @@ public class MiniCAFrame extends javax.swing.JFrame {
 
             }      
         }
-    }//GEN-LAST:event_jTable_infoMouseClicked
+    }                                        
 
-    private void jButton_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_exitActionPerformed
-        // TODO add your handling code here:
-        //ç‚¹å‡»â€œç¡®å®šâ€æŒ‰é’®ï¼Œé€€å‡ºç¨‹åº
+    private void jButton_exitActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        //µã»÷¡°È·¶¨¡±°´Å¥£¬ÍË³ö³ÌĞò
         System.exit(0);
-    }//GEN-LAST:event_jButton_exitActionPerformed
+    }                                            
 
     
     private void clearTable(){
         DefaultTableModel table = (DefaultTableModel) jTable_info.getModel();
-        table.getDataVector().clear();   //æ¸…é™¤è¡¨æ ¼æ•°æ®
-        table.fireTableDataChanged();//é€šçŸ¥æ¨¡å‹æ›´æ–°
-        jTable_info.updateUI();//åˆ·æ–°è¡¨æ ¼
+        table.getDataVector().clear();   //Çå³ı±í¸ñÊı¾İ
+        table.fireTableDataChanged();//Í¨ÖªÄ£ĞÍ¸üĞÂ
+        jTable_info.updateUI();//Ë¢ĞÂ±í¸ñ
     }
-    private void jComboBox_typeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_typeActionPerformed
-        // TODO add your handling code here:
-        //åˆ¤æ–­é€‰å–å¤é€‰æ¡†ä¸­çš„ç±»å‹,å¹¶æ˜¾ç¤ºå¯¹åº”çš„ä¿¡æ¯
-        //DefaultTableModel table = (DefaultTableModel) jTable_info.getModel();
-
-        //å…ˆæ¸…ç©ºè¡¨æ ¼
+    private void jComboBox_typeActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        //ÖØĞÂÑ¡ÔñÏÂÀ­¿òµÄ¶ÔÏóºó
+        //ÏÈÇå¿Õ±í¸ñ
        clearTable();
-        
-        //æ¸…ç©ºæ–‡æœ¬åŒºåŸŸ
+        //Çå¿ÕÎÄ±¾ÇøÓò
         jText_detailedInfo.setText("");
+        judgeWhich();
         
-        if(jComboBox_type.getSelectedItem().toString().equals("<æ‰€æœ‰>")){
-            showAll();
-        }
-        else if(jComboBox_type.getSelectedItem().toString().equals("åªæœ‰ç‰ˆæœ¬1å­—æ®µ")){
-            show1();
-        }
-        else if(jComboBox_type.getSelectedItem().toString().equals("åªæœ‰æ‰©å±•"))
-            show_extend();
-        else if(jComboBox_type.getSelectedItem().toString().equals("åªæœ‰å…³é”®æ‰©å±•"))
-            show_key();
-        else if(jComboBox_type.getSelectedItem().toString().equals("åªæœ‰å±æ€§"))
-            show_attribute();
-    }//GEN-LAST:event_jComboBox_typeActionPerformed
+    }                                              
 
+    private void judgeWhich(){//ÅĞ¶ÏÏÂÀ­¿òËùÑ¡¶ÔÏó,²¢ÏÔÊ¾¶ÔÓ¦µÄĞÅÏ¢
+        if(jComboBox_type.getSelectedItem().toString().equals("<ËùÓĞ>"))
+            showAll();
+        else if(jComboBox_type.getSelectedItem().toString().equals("Ö»ÓĞ°æ±¾1×Ö¶Î"))
+            show1();
+        else if(jComboBox_type.getSelectedItem().toString().equals("Ö»ÓĞÀ©Õ¹"))
+            show_extend();
+        else if(jComboBox_type.getSelectedItem().toString().equals("Ö»ÓĞ¹Ø¼üÀ©Õ¹"))
+            show_key();
+        else if(jComboBox_type.getSelectedItem().toString().equals("Ö»ÓĞÊôĞÔ"))
+            show_attribute();
+    }
     
     /**
      * @param args the command line arguments
@@ -531,67 +522,65 @@ public class MiniCAFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 JFrame MiniCAFrame = new MiniCAFrame();
-                /************åˆ˜æ¸Šæ™¨****************/
+                /************ÁõÔ¨³¿****************/
                 MiniCAFrame.setVisible(true);
                 MiniCAFrame.setResizable(false);
             }
         });
     }
     
-/*******************åˆ˜è‰ºè¯­***************************/
-    //è½¬16è¿›åˆ¶
+/*******************ÁõÒÕÓï***************************/
+    //×ª16½øÖÆ
     private static String byte2hex(byte [] buffer){  
-       String h = "";  
-       /******************æ¢é›¨å©·å¢åŠ if(buffer != null) **************/
-       if(buffer != null)
-       for(int i = 0; i < buffer.length  ; i++){  
-           String temp = Integer.toHexString(buffer[i] & 0xFF);  
-           if(temp.length() == 1){  
-               temp = "0" + temp;  
-           }  
-           h = h + " "+ temp;  
-       }  
+        String h = "";  
+        if(buffer != null)
+            for(int i = 0; i < buffer.length  ; i++){  
+                String temp = Integer.toHexString(buffer[i] & 0xFF);  
+                if(temp.length() == 1){  
+                    temp = "0" + temp;  
+                 }  
+            h = h + " "+ temp;  
+            }  
        return h;     
    }
-    //å¾—åˆ°æŒ‡çº¹å±æ€§
+    //µÃµ½Ö¸ÎÆÊôĞÔ
     public static String getThumbPrint(X509Certificate cert) throws NoSuchAlgorithmException, CertificateEncodingException {
-	MessageDigest md = MessageDigest.getInstance("SHA-1");
+        MessageDigest md = MessageDigest.getInstance("SHA-1");
 	byte[] der = cert.getEncoded();
 	md.update(der);
 	byte[] digest = md.digest();
 	return byte2hex(digest);
    }
-    /*****é¢å‘è€…å¤‡ç”¨åç§°*****/
+    /*****°ä·¢Õß±¸ÓÃÃû³Æ*****/
     public static String getIssuerAlternativeNames(X509Certificate cert) throws CertificateException {
     	Collection<java.util.List<?>>  lst = cert.getIssuerAlternativeNames();
     	String res = "";
-        /****************æ¢é›¨å©·å¢if(lst != null)***************/
         if(lst != null)
-    	for(java.util.List<?> item : lst){
+            for(java.util.List<?> item : lst){
     		int id = (Integer) item.get(0);
     		res += getTypeById(id);
     		res += (String) item.get(1);
     		res += '\n';
-    	}
+            }
     	return res;
     }
     
     
-    /*******ä½¿ç”¨è€…å¯é€‰åç§°******/
+    /*******Ê¹ÓÃÕß¿ÉÑ¡Ãû³Æ******/
     public static String getSubjectAlterNames(X509Certificate cert) throws CertificateParsingException{
     	Collection<java.util.List<?>>  lst = cert.getSubjectAlternativeNames();
-    	String res = null;
-        /****************æ¢é›¨å©·å¢if(lst != null)***************/
+    	String res = "";
         if(lst != null)
-    	for(java.util.List<?> item : lst){
+            for(java.util.List<?> item : lst){
+                int id = (Integer) item.get(0);
+    		res += getTypeById(id);
     		res += (String) item.get(1);
     		res += '\n';
-    	}
+            }
     	return res;
-
    }
     
-    /********æˆæƒä¿¡æ¯è®¿é—®*******/
+    /********ÊÚÈ¨ĞÅÏ¢·ÃÎÊ*******/
     public static String getAuthorityInformationAccess(X509Certificate certificate) {
         String url = "";
     	byte[] octetBytes = certificate.getExtensionValue(org.bouncycastle.asn1.x509.Extension.authorityInfoAccess.getId());
@@ -603,24 +592,19 @@ public class MiniCAFrame extends javax.swing.JFrame {
                 AuthorityInformationAccess access = AuthorityInformationAccess.getInstance(seq);
                 AccessDescription[] accessDescription = access.getAccessDescriptions();
                 for (AccessDescription info : accessDescription){
-                	//System.out.println(info.getAccessMethod().toString());
-//                        [1]Authority Info Access
-//     Access Method=è”æœºè¯ä¹¦çŠ¶æ€åè®® (1.3.6.1.5.5.7.48.1)
-//     Alternative Name:
-//          URL=https://hpxs
-
-                        url += "["+ i +"]"+"Authority Info Access\n     Access Method=è”æœºè¯ä¹¦çŠ¶æ€åè®® (";
-                        url += info.getAccessMethod().toString()+")\n     Alternative Name:\n          URL=https:";
-                   //System.out.println(info.getAccessLocation().getName().toString());
+                   url += "["+ i +"]"+"Authority Info Access\n     Access Method=Áª»úÖ¤Êé×´Ì¬Ğ­Òé (";
+                   url += info.getAccessMethod().toString()+")\n     Alternative Name:\n          URL=https:";
                    url += info.getAccessLocation().getName().toString();
                    url += '\n';                }                
             } catch (IOException ignore) {
+                ignore.printStackTrace();
             }
         }
         return url;
     }
     
-    /******åŸºæœ¬çº¦æŸ   *****/
+    /**
+     * @param cert****»ù±¾Ô¼Êø   *****/
     public static String getBasicConstraints(X509Certificate cert) throws CertPathValidatorException, IOException {
         String s = "";      
     	BasicConstraints bc = null;
@@ -628,86 +612,83 @@ public class MiniCAFrame extends javax.swing.JFrame {
     	byte[] encoded = X509ExtensionUtil.fromExtensionValue(octetBytes).getEncoded();
         ASN1Sequence seq = ASN1Sequence.getInstance(ASN1Primitive.fromByteArray(encoded));
         bc = BasicConstraints.getInstance(seq);
-        
         if (bc != null)
         {
             if (!(bc.isCA()));
-            	//System.out.println("Not a CA certificate");
-                //s += "Not a CA certificate";
             else{
-            	//System.out.println("Subject Type=CA");
                 s += "Subject Type=CA\n";
-            	//System.out.println("Path Length Constraint="+bc.getPathLenConstraint());
                 s += "Path Length Constraint="+bc.getPathLenConstraint();
             }
         }
-        else
-        {
+        else{
             throw new CertPathValidatorException("Intermediate certificate lacks BasicConstraints");
         }
         return s;
     }
      
     
-    /**** ç­–ç•¥é™åˆ¶ ****/
+    /**** ²ßÂÔÏŞÖÆ ****/
     public static String getPolicyConstraints(X509Certificate cert) throws IOException {
         
     	byte[] CP = cert.getExtensionValue(org.bouncycastle.asn1.x509.Extension.policyConstraints.getId());
-		if (CP == null) {
-			//System.out.println(12313);
-			return null;
-		}
-		byte[] encoded = X509ExtensionUtil.fromExtensionValue(CP).getEncoded();
+        if (CP == null)
+            return null;
+            
+	byte[] encoded = X509ExtensionUtil.fromExtensionValue(CP).getEncoded();
         ASN1Sequence seq = ASN1Sequence.getInstance(ASN1Primitive.fromByteArray(encoded));
         String s = seq.getObjectAt(0).toString();
-       // System.out.println(s);
        String policy = "";
-        if(s.charAt(1)=='0'){
-        	//System.out.println("Required Explicit Policy Skip Certs="+s.charAt(5));
+        if(s.charAt(1)=='0')
                 policy += "Required Explicit Policy Skip Certs="+s.charAt(5);
-        }else {
-        	//System.out.println("Duplicate requireExplicitPolicy");
+        else
                 policy += "Duplicate requireExplicitPolicy";
-        }
-		return policy;
-	} 
+	return policy;
+    } 
     
-    /******æˆæƒå¯†é’¥æ ‡è¯†ç¬¦******/
+    /******ÊÚÈ¨ÃÜÔ¿±êÊ¶·û******/
     public static String getAuthorityKeyIdentifier(X509Certificate cert) throws CertificateException {
     	byte[] res = null;
+        byte[] res2 = new byte[20];
     	String akid = "";
+        
     	byte[] extval = cert.getExtensionValue(org.bouncycastle.asn1.x509.Extension.authorityKeyIdentifier.getId());
     	ASN1OctetString akiOc = ASN1OctetString.getInstance(extval);
     	if (extval != null) {
-			AuthorityKeyIdentifier aki = AuthorityKeyIdentifier.getInstance(akiOc.getOctets());
-			AuthorityKeyIdentifier keyId = new AuthorityKeyIdentifier(extval);
-			res = keyId.getKeyIdentifier();
-			akid = byte2hex(res);
-	    	akid += "\nCertificate Issuer:\n"
-	    			+ "Directory Address:\n ";
-	    	GeneralName[] issuer = aki.getAuthorityCertIssuer().getNames();
-	    	for(GeneralName name : issuer){
-	    		akid += name.toString();
-	    		akid += '\n';
-	    	}
-	    	
+		AuthorityKeyIdentifier aki = AuthorityKeyIdentifier.getInstance(akiOc.getOctets());
+		AuthorityKeyIdentifier keyId = new AuthorityKeyIdentifier(extval);
+		res = keyId.getKeyIdentifier();
+                akid += "KeyID=";
+                for(int i = 0; i < 20;i++){
+                    res2[i] = res[i+8];
+                }
+		akid += byte2hex(res2);
+	    	akid += "\nCertificate Issuer:\n"+ "     Directory Address:\n ";
+                akid += "          "+cert.getIssuerX500Principal().toString().replace(",", "\n          ");
+                akid += "\n";
 	    	String serialnum = aki.getAuthorityCertSerialNumber().toString();
-	    	
 	    	akid += "Certificate SerialNumber="+serialnum;
-			
-		}
+	}
     	return akid;
     }
 
-/**********ä½¿ç”¨è€…å¯†é’¥æ ‡è¯†ç¬¦******/
+/**********Ê¹ÓÃÕßÃÜÔ¿±êÊ¶
+     * @param certificate·û******/
     public static String getSubjectKeyIdentifier(X509Certificate certificate) throws CertificateException {
-    	byte[] result = null;
+    	String skid = "";
+        byte[] result = null;
+        byte [] res = new byte[20];
     	byte[] extvalue = certificate.getExtensionValue(X509Extensions.SubjectKeyIdentifier.getId());
-		if (extvalue != null) {
-			SubjectKeyIdentifier keyId = new SubjectKeyIdentifier(extvalue);
-			result = keyId.getKeyIdentifier();
-		}
-    	return byte2hex(result);
+	if (extvalue != null) {
+            SubjectKeyIdentifier keyId = new SubjectKeyIdentifier(extvalue);
+            result = keyId.getKeyIdentifier();
+            
+            for(int i = 0; i < result.length-4; i++){
+                res[i] = result[i+4];
+                if(i==19)break;
+            }
+            skid = byte2hex(res);
+	}
+    	return skid;
     }
 
      public static String getTypeById(int id) {
@@ -755,47 +736,40 @@ public class MiniCAFrame extends javax.swing.JFrame {
 	   return type;
   }
 
-//CRLåˆ†å‘ç‚¹
+//CRL·Ö·¢µã
    public static String getCrlDistributionPoints(
 			X509Certificate cert) throws CertificateParsingException, IOException {
-		byte[] crldpExt = cert.getExtensionValue(
-				X509Extensions.CRLDistributionPoints.getId());
-                /***************************æ¢é›¨å©·å¢if(crldpExt != null)*****************/
+		byte[] crldpExt = cert.getExtensionValue(X509Extensions.CRLDistributionPoints.getId());
                 ArrayList<String> crlUrls = new ArrayList<String>();
                 if(crldpExt != null){
-		ASN1InputStream oAsnInStream = new ASN1InputStream(
-				new ByteArrayInputStream(crldpExt));
+                    ASN1InputStream oAsnInStream = new ASN1InputStream(new ByteArrayInputStream(crldpExt));
+                    
+                    ASN1Primitive derObjCrlDP = oAsnInStream.readObject();
+                    DEROctetString dosCrlDP = (DEROctetString) derObjCrlDP;
+                    byte[] crldpExtOctets = dosCrlDP.getOctets();
+                    ASN1InputStream oAsnInStream2 = new ASN1InputStream(new ByteArrayInputStream(crldpExtOctets));
+    		
+                    ASN1Primitive derObj2 = oAsnInStream2.readObject();
+                    CRLDistPoint distPoint = CRLDistPoint.getInstance(derObj2);
 		
-		ASN1Primitive derObjCrlDP = oAsnInStream.readObject();
-		DEROctetString dosCrlDP = (DEROctetString) derObjCrlDP;
-		byte[] crldpExtOctets = dosCrlDP.getOctets();
-		
-		ASN1InputStream oAsnInStream2 = new ASN1InputStream(
-				new ByteArrayInputStream(crldpExtOctets));
-		
-		ASN1Primitive derObj2 = oAsnInStream2.readObject();
-		CRLDistPoint distPoint = CRLDistPoint.getInstance(derObj2);
-		
-		for (DistributionPoint dp : distPoint.getDistributionPoints()) {
-			//System.out.println(dp);
-	           DistributionPointName dpn = dp.getDistributionPoint();
-	           // Look for URIs in fullName
-	           if (dpn != null) {
-	               if (dpn.getType() == DistributionPointName.FULL_NAME) {
-	                   GeneralName[] genNames = GeneralNames.getInstance(
-	                       dpn.getName()).getNames();
-	                   // Look for an URI
-	                   for (int j = 0; j < genNames.length; j++) {
-	                       if (genNames[j].getTagNo() == GeneralName.uniformResourceIdentifier) {
-	                           String url = DERIA5String.getInstance(
-	                               genNames[j].getName()).getString();
-	                           crlUrls.add(url);
-	                       }
-	                   }
-	               }
-	           }
-		}
-   }
+                    for (DistributionPoint dp : distPoint.getDistributionPoints()) {
+                        DistributionPointName dpn = dp.getDistributionPoint();
+                        // Look for URIs in fullName
+                        if (dpn != null) {
+                            if (dpn.getType() == DistributionPointName.FULL_NAME) {
+                                GeneralName[] genNames = GeneralNames.getInstance(dpn.getName()).getNames();
+                                
+                                // Look for an URI
+                                for (int j = 0; j < genNames.length; j++) {
+                                    if (genNames[j].getTagNo() == GeneralName.uniformResourceIdentifier) {
+                                        String url = DERIA5String.getInstance(genNames[j].getName()).getString();
+                                        crlUrls.add(url);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 String s = "";
                 int i = 1;
                 for(String n:crlUrls){
@@ -803,37 +777,35 @@ public class MiniCAFrame extends javax.swing.JFrame {
                     s += "URL = "+ n +"\n";
                     i++;
                 }   
-                    
 		return s;
 }
-/*****ä½¿ç”¨è€…ï¼ˆæ²¡æœ‰ç­‰å·çš„ï¼‰*****/
+   
+/*****Ê¹ÓÃÕß£¨ÓÃÓÚ±í¸ñµÚ¶şÁĞÏÔÊ¾£©*****/
     public static String getPrincipalNames(X509Certificate cert) throws CertificateException {
     	X509Principal x509Principal = PrincipalUtil.getSubjectX509Principal(cert);
         Vector<String> names = x509Principal.getValues();
         String s = "";
-        for(int i=names.size()-1; i>=0; i--){
+        
+        for(int i=names.size()-1; i>=0; i--)
         	s += names.get(i);
-        }
 	return s;
     }
-/*********é¢å‘è€…ï¼ˆæ²¡æœ‰ç­‰å·ï¼‰***********/
-  
+    
+/*********°ä·¢Õß£¨ÓÃÓÚ±í¸ñµÚ¶şÁĞÏÔÊ¾£©***********/
      public static String getIssuerNames(X509Certificate cert) throws CertificateException {
         
     	X509Principal x509Principal = PrincipalUtil.getIssuerX509Principal(cert);
         Vector<String> names = x509Principal.getValues();
         String s = "";
-        for(int i=names.size()-1; i>=0; i--){
+        
+        for(int i=names.size()-1; i>=0; i--)
         	s += names.get(i);
-        }
-        //System.out.println(s);
+        
 	return s;
     }
    
    
-   
-   
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton jButton_chooseCA;
     private javax.swing.JButton jButton_exit;
     private javax.swing.JComboBox<String> jComboBox_type;
@@ -845,14 +817,13 @@ public class MiniCAFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_CApath;
     private javax.swing.JTextArea jText_detailedInfo;
     private javax.swing.JLabel show;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 
     class JTableCellRender1 extends JLabel implements TableCellRenderer {  
   
-    @Override  
-    public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) { 
-        return (JLabel)value;  
-    }  
-}
-    
+         @Override  
+        public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) { 
+            return (JLabel)value;  
+        }  
+    }
 }
